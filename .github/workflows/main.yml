@@ -44,6 +44,7 @@ jobs:
         run: |
           wget https://releases.hashicorp.com/terraform/1.6.6/terraform_1.6.6_darwin_arm64.zip
           unzip terraform_1.6.6_darwin_arm64.zip
+          chmod +x ./terraform
           ./terraform version
           ls -al
 
